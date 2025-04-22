@@ -40,7 +40,9 @@
             title="Demo Traders">
     </section>
     <section class="container four-card-container mt-5 mb-4">
+        <h1 class="font-weight-bold text-purple text-center pb-5 text-uppercase">Contact Information</h1>
         <div class="row">
+
             <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="card h-100">
                     <div class="card-body d-flex flex-column">
@@ -84,18 +86,20 @@
         </div>
     </section>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62970.01160346889!2d77.75142297351574!3d9.454179599892328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cee43d812d0d%3A0x8ce12e9dcdaa2a2c!2sSivakasi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738684672622!5m2!1sen!2sin"
-                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-section">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62970.01160346889!2d77.75142297351574!3d9.454179599892328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cee43d812d0d%3A0x8ce12e9dcdaa2a2c!2sSivakasi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738684672622!5m2!1sen!2sin"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>
     <!-- footer -->
-    <div class="contactlast bg-green text-dark">
+    <div class="contactlast bg-pink text-white">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
