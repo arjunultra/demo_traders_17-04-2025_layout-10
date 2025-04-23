@@ -829,6 +829,10 @@ section.hero-content .hero-content-title {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
 }
+.seasonal-section .seasonal-features li::before {
+  content: "✨";
+  margin-right: 8px;
+}
 
 .seasonal-section .seasonal-btn {
   display: inline-block;

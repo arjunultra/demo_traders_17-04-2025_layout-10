@@ -329,7 +329,7 @@
 									<p>Make your special day magical with elegant fountains, sparklers, and quiet aerial
 										displays.</p>
 									<ul class="seasonal-features">
-										<li>25 Heart-shaped Sparklers</li>
+										<li>25 Heart Sparklers</li>
 										<li>3 Silver Fountains</li>
 										<li>1 Multi-shot Cake</li>
 										<li>10 Color Smoke Bombs</li>
@@ -382,7 +382,7 @@
 									<p>Ring in the new year with this spectacular collection of premium displays.</p>
 									<ul class="seasonal-features">
 										<li>1 Professional Finale Box</li>
-										<li>3 Multi-shot Aerial Cakes</li>
+										<li>3 Multi-shot Cakes</li>
 										<li>24 Rockets Assortment</li>
 										<li>50 Premium Sparklers</li>
 									</ul>

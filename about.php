@@ -76,7 +76,7 @@
     </div>
 </section>
 <!-- about-parallax -->
-<section class="about-parallax">
+<section class="about-parallax overflow-hidden">
     <div class="container about-parallax-container">
         <div class="row align-items-center">
             <div class="col-lg-8 col-md-12 col-12" data-wow-duration="1.5s" data-wow-delay=".5s">
