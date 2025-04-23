@@ -53,7 +53,7 @@
         <div class="row nav-row">
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg">
-                    <button class="navbar-toggler border border-white" type="button" data-toggle="collapse"
+                    <button class="navbar-toggler border border-white mx-auto" type="button" data-toggle="collapse"
                         data-target="#navMenu">
                         <i class="bi bi-list text-warning"></i>
                     </button>
