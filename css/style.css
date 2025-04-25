@@ -104,7 +104,7 @@ button {
 .header-section .header-logo-area {
   display: flex;
   align-items: center;
-  padding: 5px 10px; /* Reduced padding */
+  /* padding: 5px 10px; Reduced padding */
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   height: 100%;
 }
@@ -145,6 +145,9 @@ button {
   transition: transform 0.3s ease;
   height: 100%;
   margin: 5px 0; /* Reduced from 10px */
+}
+.header-section .contact-item.contact-phone {
+  justify-content: flex-start !important;
 }
 
 .header-section .icon-container {
@@ -720,187 +723,248 @@ section.hero-content .hero-content-title {
 /* Seasonal Packages Section Styles - Properly Scoped */
 
 /* Seasonal Section Styles */
-/* Seasonal Section Styles */
+/* Base Section Styles */
 .seasonal-section {
   padding: 5rem 0;
   background-color: #fff;
 }
 
-.seasonal-section .seasonal-header {
+/* Card Sizing and Transitions */
+.seasonal-section {
+  --card-height: 500px;
+  --transition-speed: 0.4s;
+}
+
+/* Section Header Styles */
+.seasonal-section .section-header {
   margin-bottom: 3rem;
 }
 
-.seasonal-section .seasonal-title {
+.seasonal-section .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333;
+  color: var(--purple);
   margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
 }
 
-.seasonal-section .seasonal-subtitle {
+.seasonal-section .section-title:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: var(--pink);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.seasonal-section .section-subtitle {
   font-size: 1.2rem;
   color: #666;
+  max-width: 700px;
+  margin: 1rem auto 0;
 }
 
-.seasonal-section .seasonal-card {
-  border-radius: 8px;
+/* Card Base Styles */
+.seasonal-section .package-card {
+  height: var(--card-height);
+  border-radius: 10px;
   overflow: hidden;
+  position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  height: 500px;
-  margin-bottom: 2rem;
-  position: relative;
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
 }
 
-.seasonal-section .seasonal-card-inner {
-  position: relative;
-  height: 100%;
-  transition: all 0.4s ease;
+.seasonal-section .package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-.seasonal-section .seasonal-image {
+/* Image Styles */
+.seasonal-section .card-image {
   height: 100%;
   width: 100%;
+  position: absolute;
   overflow: hidden;
 }
 
-.seasonal-section .seasonal-image img {
-  height: 100%;
+.seasonal-section .card-image img {
   width: 100%;
-  object-fit: contain;
-  transition: transform 0.4s ease;
-}
-
-.seasonal-section .seasonal-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(107, 40, 120, 0.85);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 1;
-}
-
-/* Base content styling for always visible title and price */
-.seasonal-section .seasonal-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 1.5rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-  color: #fff;
-  z-index: 2;
-  transition: all 0.4s ease;
-}
-
-.seasonal-section .seasonal-card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
-  color: rebeccapurple;
-}
-
-.seasonal-section .seasonal-price {
-  font-size: 1.1rem;
-  margin-bottom: 0;
-  font-weight: 500;
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-
-/* Detailed content that appears on hover */
-.seasonal-section .seasonal-details {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  margin-top: 0.5rem;
-}
-
-.seasonal-section .seasonal-features {
-  padding-left: 1.2rem;
-  margin: 1rem 0;
-}
-
-.seasonal-section .seasonal-features li {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-}
-.seasonal-section .seasonal-features li::before {
-  content: "✨";
-  margin-right: 8px;
-}
-
-.seasonal-section .seasonal-btn {
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  background: var(--pink);
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 0.5rem;
-  transition: background 0.3s ease;
-}
-
-.seasonal-section .seasonal-btn:hover {
-  background: rebeccapurple;
-}
-
-/* .seasonal-section .seasonal-custom-card {
-  background: linear-gradient(135deg, #ff6b00, #d30a0a);
-} */
-
-.seasonal-section .seasonal-custom-text {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.seasonal-section .seasonal-footer {
-  margin-top: 2rem;
-}
-
-/* Hover Effects */
-.seasonal-section .seasonal-card:hover .seasonal-overlay {
-  opacity: 1;
-}
-
-.seasonal-section .seasonal-card:hover .seasonal-content {
-  background: transparent;
-  top: 0;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  object-fit: cover;
+  transition: transform calc(var(--transition-speed) * 1.5);
 }
 
-.seasonal-section .seasonal-card:hover .seasonal-details {
-  opacity: 1;
-  max-height: 300px; /* Allow enough height for content */
-}
-
-.seasonal-section .seasonal-card:hover .seasonal-image img {
+.seasonal-section .package-card:hover .card-image img {
   transform: scale(1.1);
 }
-.seasonal-section .seasonal-card:hover .seasonal-card-title {
-  color: var(--pink);
-}
-/* Custom styling for the custom package card */
-.seasonal-section .seasonal-custom-card .seasonal-content {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.seasonal-section .package-card:hover .card-body {
+  padding: 0.5rem 1.5rem;
+  flex: 1;
+  overflow-y: auto; /* Allow scrolling if content is too long */
+  max-height: 60%; /* Limit maximum height to prevent overlap */
 }
 
-.seasonal-section .seasonal-custom-card .seasonal-details {
+/* Overlay Styles */
+.seasonal-section .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(168, 0, 255, 0.8)
+  );
+  opacity: 0;
+  transition: opacity var(--transition-speed);
+}
+
+.seasonal-section .package-card:hover .card-overlay {
   opacity: 1;
-  max-height: 300px;
+}
+
+/* Content Styles */
+.seasonal-section .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 10;
+  transition: all var(--transition-speed);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+/* Before hover - only show header */
+.seasonal-section .card-header {
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  transition: all var(--transition-speed);
+}
+
+.seasonal-section .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--purple);
+  transition: color var(--transition-speed);
+}
+
+.seasonal-section .card-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+/* Initially hidden body & footer */
+.seasonal-section .card-body,
+.seasonal-section .card-footer {
+  padding: 0 1.5rem;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all var(--transition-speed);
+}
+
+/* On hover - expand to show full content */
+.seasonal-section .package-card:hover .card-content {
+  height: 100%;
+  background: rgba(168, 0, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+}
+
+.seasonal-section .package-card:hover .card-header {
+  background: none;
+  padding-top: 2rem;
+}
+
+.seasonal-section .package-card:hover .card-title {
+  color: var(--pink);
+}
+
+.seasonal-section .package-card:hover .card-body,
+.seasonal-section .package-card:hover .card-footer {
+  max-height: 1000px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.seasonal-section .package-card:hover .card-body {
+  padding: 0.5rem 1.5rem;
+  flex: 1;
+}
+
+.seasonal-section .package-card:hover .card-footer {
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+/* Features List */
+.seasonal-section .package-features {
+  list-style: none;
+  padding-left: 0.5rem;
+  margin: 0.8rem 0 1.2rem 0;
+}
+
+.seasonal-section .package-features li {
+  margin-bottom: 0.6rem; /* Increase spacing between list items */
+  line-height: 1.4; /* Better line height for readability */
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.seasonal-section .package-features li:before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  color: var(--yellow);
+}
+
+/* Buttons */
+.seasonal-section .btn-view {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--pink);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--pink);
+}
+
+.seasonal-section .btn-view:hover {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+
+.seasonal-section .btn-contact {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--purple);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid var(--purple);
+}
+
+.seasonal-section .btn-contact:hover {
+  background-color: transparent;
+  color: var(--purple);
+  text-decoration: none;
 }
 
 /* about page */
@@ -1794,21 +1858,57 @@ section.safety-content {
   .about-intro .experience-text {
     font-size: 0.75rem;
   }
-  .seasonal-section .seasonal-title {
-    font-size: 2rem;
+  /* seasonal section */
+  .seasonal-section {
+    --card-height: 380px;
+    padding: 3rem 0;
   }
 
-  .seasonal-section .seasonal-card {
-    height: 400px;
-    margin-bottom: 30px;
+  .seasonal-section .section-title {
+    font-size: 1.8rem;
   }
 
-  .seasonal-section .seasonal-details {
-    max-height: 200px;
-    opacity: 1;
+  .seasonal-section .section-subtitle {
+    font-size: 1rem;
   }
-  .seasonal-section .seasonal-content {
-    background-color: rgba(255, 0, 255, 0.616);
+
+  .seasonal-section .card-title {
+    font-size: 1.3rem;
+  }
+
+  .seasonal-section .card-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .seasonal-section .package-card:hover .card-body {
+    padding: 0 1.5rem;
+  }
+
+  .seasonal-section .package-features {
+    margin: 0.7rem 0;
+  }
+
+  .seasonal-section .package-features li {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .seasonal-section .btn-view,
+  .seasonal-section .btn-contact {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .seasonal-section .package-card:hover .card-header {
+    padding-top: 1.5rem;
+  }
+
+  .seasonal-section .package-card:hover .card-footer {
+    padding: 1.5rem;
+    margin-top: auto;
+    min-height: 70px; /* Minimum height for footer area */
+    display: flex;
+    align-items: center;
   }
   /* Center logo */
   .header-section .header-logo-area {
@@ -1835,7 +1935,10 @@ section.safety-content {
   .header-section .contact-item {
     margin: 5px 0;
     padding: 8px;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+  .header-section .contact-item.contact-phone {
+    justify-content: flex-start;
   }
 
   .header-section .contact-details h2 {
@@ -1946,8 +2049,29 @@ section.safety-content {
   .about-intro .experience-number {
     font-size: 2rem;
   }
-  .seasonal-section .seasonal-card {
-    height: 450px;
+  /* seasonal-section */
+  .seasonal-section {
+    --card-height: 400px;
+  }
+
+  .seasonal-section .section-title {
+    font-size: 2.2rem;
+  }
+
+  .seasonal-section .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .seasonal-section .card-title {
+    font-size: 1.4rem;
+  }
+
+  .seasonal-section .package-features li {
+    margin-bottom: 0.4rem;
+  }
+
+  .seasonal-section .btn-view {
+    padding: 0.6rem 1.3rem;
   }
   /* Center logo */
   .header-section .header-logo-area {

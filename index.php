@@ -306,36 +306,39 @@
 	</section>
 	<!-- last white section -->
 	<!-- Seasonal Packages Section -->
-	<section class="seasonal-section py-5 bg-white">
+	<!-- Seasonal Packages Section -->
+	<section class="seasonal-section py-5">
 		<div class="container">
-			<div class="seasonal-header text-center mb-5">
-				<h2 class="seasonal-title text-purple">Seasonal Packages</h2>
-				<p class="seasonal-subtitle">Specially curated fireworks collections for every celebration</p>
+			<div class="section-header text-center mb-5">
+				<h2 class="section-title">Seasonal Packages</h2>
+				<p class="section-subtitle">Specially curated fireworks collections for every celebration</p>
 			</div>
 
 			<div class="row">
 				<!-- Wedding Package -->
 				<div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="seasonal-card">
-						<div class="seasonal-card-inner">
-							<div class="seasonal-image">
-								<img src="images/wedding.webp" alt="Wedding Celebration Package" class="img-fluid">
+					<div class="package-card">
+						<div class="card-image">
+							<img src="images/wedding.webp" alt="Wedding Celebration Package">
+						</div>
+						<div class="card-overlay"></div>
+						<div class="card-content">
+							<div class="card-header">
+								<h3 class="card-title">Wedding Pack</h3>
+								<p class="card-subtitle">Celebrate Love</p>
 							</div>
-							<div class="seasonal-overlay"></div>
-							<div class="seasonal-content">
-								<h3 class="seasonal-card-title">Wedding Sparkle</h3>
-								<p class="seasonal-price">Celebrate Love</p>
-								<div class="seasonal-details">
-									<p>Make your special day magical with elegant fountains, sparklers, and quiet aerial
-										displays.</p>
-									<ul class="seasonal-features">
-										<li>25 Heart Sparklers</li>
-										<li>3 Silver Fountains</li>
-										<li>1 Multi-shot Cake</li>
-										<li>10 Color Smoke Bombs</li>
-									</ul>
-									<a href="products.php" class="seasonal-btn">View Package</a>
-								</div>
+							<div class="card-body">
+								<p>Make your special day magical with elegant fountains, sparklers, and quiet aerial
+									displays.</p>
+								<ul class="package-features">
+									<li>25 Heart Sparklers</li>
+									<li>3 Silver Fountains</li>
+									<li>1 Multi-shot Cake</li>
+									<li>10 Color Smoke Bombs</li>
+								</ul>
+							</div>
+							<div class="card-footer">
+								<a href="products.php" class="btn-view">View Package</a>
 							</div>
 						</div>
 					</div>
@@ -343,25 +346,27 @@
 
 				<!-- Birthday Package -->
 				<div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="seasonal-card">
-						<div class="seasonal-card-inner">
-							<div class="seasonal-image">
-								<img src="images/birthday.webp" alt="Birthday Celebration Package" class="img-fluid">
+					<div class="package-card">
+						<div class="card-image">
+							<img src="images/birthday.webp" alt="Birthday Celebration Package">
+						</div>
+						<div class="card-overlay"></div>
+						<div class="card-content">
+							<div class="card-header">
+								<h3 class="card-title">Birthday Pack</h3>
+								<p class="card-subtitle">Birthday Blaze</p>
 							</div>
-							<div class="seasonal-overlay"></div>
-							<div class="seasonal-content">
-								<h3 class="seasonal-card-title">Birthday Blast</h3>
-								<p class="seasonal-price">Birthday Blaze</p>
-								<div class="seasonal-details">
-									<p>Perfect for birthday celebrations with colorful, child-friendly options.</p>
-									<ul class="seasonal-features">
-										<li>40 Colored Sparklers</li>
-										<li>2 Fountain Cones</li>
-										<li>5 Small Aerial Shells</li>
-										<li>3 Novelty Items</li>
-									</ul>
-									<a href="products.php" class="seasonal-btn">View Package</a>
-								</div>
+							<div class="card-body">
+								<p>Perfect for birthday celebrations with colorful, child-friendly options.</p>
+								<ul class="package-features">
+									<li>40 Colored Sparklers</li>
+									<li>2 Fountain Cones</li>
+									<li>5 Small Aerial Shells</li>
+									<li>3 Novelty Items</li>
+								</ul>
+							</div>
+							<div class="card-footer">
+								<a href="products.php" class="btn-view">View Package</a>
 							</div>
 						</div>
 					</div>
@@ -369,83 +374,63 @@
 
 				<!-- Festival Package -->
 				<div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="seasonal-card">
-						<div class="seasonal-card-inner">
-							<div class="seasonal-image">
-								<img src="images/festival.webp" alt="New Year's Eve Package" class="img-fluid">
+					<div class="package-card">
+						<div class="card-image">
+							<img src="images/festival.webp" alt="Festival Package">
+						</div>
+						<div class="card-overlay"></div>
+						<div class="card-content">
+							<div class="card-header">
+								<h3 class="card-title">Festival Pack</h3>
+								<p class="card-subtitle">Festive Lights</p>
 							</div>
-							<div class="seasonal-overlay"></div>
-							<div class="seasonal-content">
-								<h3 class="seasonal-card-title">Festival Pack</h3>
-								<p class="seasonal-price">Festive Lights</p>
-								<div class="seasonal-details">
-									<p>Ring in the new year with this spectacular collection of premium displays.</p>
-									<ul class="seasonal-features">
-										<li>1 Professional Finale Box</li>
-										<li>3 Multi-shot Cakes</li>
-										<li>24 Rockets Assortment</li>
-										<li>50 Premium Sparklers</li>
-									</ul>
-									<a href="products.php" class="seasonal-btn">View Package</a>
-								</div>
+							<div class="card-body">
+								<p>Ring in the new year with this spectacular collection of premium displays.</p>
+								<ul class="package-features">
+									<li>1 Professional Finale Box</li>
+									<li>3 Multi-shot Cakes</li>
+									<li>24 Rockets Assortment</li>
+									<li>50 Premium Sparklers</li>
+								</ul>
+							</div>
+							<div class="card-footer">
+								<a href="products.php" class="btn-view">View Package</a>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<!-- Custom Package -->
-				<!-- <div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="seasonal-card seasonal-custom-card">
-						<div class="seasonal-card-inner">
-							<div class="seasonal-overlay"></div>
-							<div class="seasonal-content">
-								<h3 class="seasonal-card-title text-purple">Custom Package</h3>
-								<p class="seasonal-custom-text">Create your own perfect package tailored to your event
-								</p>
-								<div class="seasonal-details">
-									<p>Work with our experts to design a custom fireworks display perfect for your
-										unique celebration.</p>
-									<ul class="seasonal-features">
-										<li>Pick your favorites</li>
-										<li>Set your budget</li>
-										<li>Choose effects</li>
-										<li>Professional advice</li>
-									</ul>
-									<a href="contact.php" class="seasonal-btn">Get Started</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
-				<!-- custom pack -->
 				<div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="seasonal-card">
-						<div class="seasonal-card-inner">
-							<div class="seasonal-image">
-								<img src="images/festival.webp" alt="New Year's Eve Package" class="img-fluid">
+					<div class="package-card">
+						<div class="card-image">
+							<img src="images/custom.webp" alt="Custom Package">
+						</div>
+						<div class="card-overlay"></div>
+						<div class="card-content">
+							<div class="card-header">
+								<h3 class="card-title">Custom Pack</h3>
+								<p class="card-subtitle">Make Your wish</p>
 							</div>
-							<div class="seasonal-overlay"></div>
-							<div class="seasonal-content">
-								<h3 class="seasonal-card-title">Custom Package</h3>
-								<p class="seasonal-price">Your wish is our command</p>
-								<div class="seasonal-details">
-									<p>Create your own perfect package tailored to your event.</p>
-									<ul class="seasonal-features">
-										<li>Pick your favorites</li>
-										<li>Set your budget</li>
-										<li>Choose effects</li>
-										<li>Professional advice</li>
-									</ul>
-									<a href="products.php" class="seasonal-btn">View Package</a>
-								</div>
+							<div class="card-body">
+								<p>Create your own perfect package tailored to your event.</p>
+								<ul class="package-features">
+									<li>Pick your favorites</li>
+									<li>Set your budget</li>
+									<li>Choose effects</li>
+									<li>Professional advice</li>
+								</ul>
+							</div>
+							<div class="card-footer">
+								<a href="products.php" class="btn-view">View Package</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="seasonal-footer text-center mt-4">
-				<a href="contact.php" class="theme-btn hvr-shutter-out-horizontal">Contact Us</a>
+			<div class="text-center mt-5">
+				<a href="contact.php" class="btn-contact">Contact Us For Special Requirements</a>
 			</div>
 		</div>
 	</section>

@@ -20,7 +20,7 @@
             <!-- Contact Details Area -->
             <div class="col-12 col-md-8 col-lg-9">
                 <div class="row contact-row align-items-center">
-                    <div class="col-12 col-lg-7 d-none d-lg-block">
+                    <div class="col-12 col-lg-6">
                         <!-- Empty or can be used for address later -->
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
@@ -34,8 +34,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-2">
-                        <div class="contact-item">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="contact-item contact-phone">
                             <div class="icon-container">
                                 <i class="bi bi-telephone-fill"></i>
                             </div>
